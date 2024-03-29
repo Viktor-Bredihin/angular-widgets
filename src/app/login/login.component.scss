@@ -1,0 +1,30 @@
+@import 'variables';
+@import 'buttons';
+@import 'form';
+
+.tt-login {
+  background-color: $c-primary-light;
+  border-radius: 10px;
+  font-family: "Heebo", sans-serif;
+  padding: 15px;
+  text-align: center;
+  width: 345px;
+
+  .title {
+    color: $c-secondary;
+    font-size: $fs-big;
+    margin-bottom: 10px;
+  }
+
+  .register {
+    color: $c-gray;
+
+    a {
+      color: $c-primary;
+    }
+  }
+
+  button[type=submit] {
+    margin: 10px 0;
+  }
+}

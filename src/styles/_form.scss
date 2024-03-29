@@ -1,0 +1,20 @@
+@import 'variables';
+
+input {
+  border: $c-border 1px solid;
+  border-radius: 2px;
+  box-sizing: border-box;
+  height: 46px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+
+  &.ng-invalid.ng-touched {
+    border-color: $c-error;
+  }
+
+  &:focus, &:focus-visible {
+    border-color: $c-primary;
+    outline: none;
+  }
+}

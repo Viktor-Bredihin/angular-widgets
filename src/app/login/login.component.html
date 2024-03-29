@@ -1,0 +1,20 @@
+<form [formGroup]="form" (ngSubmit)="submit()" class="tt-login">
+  <div class="title">Login to TaxTank</div>
+  <input placeholder="Enter your email" formControlName="email" required />
+  <input
+    type="password"
+    placeholder="Enter password"
+    formControlName="password"
+    required />
+
+  <button type="submit" class="block primary" name="login">
+    Login to TaxTank
+  </button>
+
+  <div class="register">
+    Don't have an account?
+    <a href="https://my.taxtank.com.au/register?" class="ml-10 link register">
+      Register
+    </a>
+  </div>
+</form>

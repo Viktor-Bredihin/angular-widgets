@@ -1,0 +1,39 @@
+@import 'variables';
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: $fs-small;
+  height: 40px;
+  min-width: 84px;
+  line-height: 18px;
+  padding: 0 22px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+
+  &.block {
+    width: 100%;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.basic {
+    background: $c-white;
+    border: 1px solid $c-border;
+    color: $c-primary;
+  }
+
+  &.primary {
+    background: $c-primary;
+    color: $c-white;
+  }
+}
